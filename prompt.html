@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createfile()
+        {
+           folderName= document.getElementById("txtBox").value;
+           if(folderName==""){
+            alert("folder can't be empty")
+           }
+          
+           else{
+            document.querySelector("p").innerHTML += "folderName:" + folderName + "<br>";
+            document.getElementById("txtBox").value="";
+           }
+           
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="text" id="txtBox"><button onclick="createfile()">Create folder</button>
+    <p></p>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-size: cover;
+        }
+        header{
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .brand-title{
+            font-size: 30px;
+            color: red;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .language{
+            border: 1px solid white;
+            color: white;
+            padding: 3px;
+            border-radius: 7px;
+            border-color: aqua;
+            background-color: lightblue;
+            text-align: center;
+            cursor: auto;
+            font-size: 18px;
+
+        }
+        .btn-signin{
+            color: black;
+            border: 1px solid black;
+            padding: 3px;
+            border-radius: 10px;
+            background-color: linen;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            margin-left: 2px;
+            
+        }
+        main{
+            padding: 100px;
+            padding-top: 180px;
+            text-align: center;
+            color: yellow;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+        .main-title{
+            font-size: 30px;
+        }
+        .main-subtitle{
+            color: whitesmoke;
+            font-size: 25px;
+            padding-top: 10px;
+        }
+        .email{
+            border: 1px solid white;
+            display: inline-block;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.4);
+            margin-right: 2px;
+            text-align: left;
+            padding: 15px;
+            font-size: 15px;
+            cursor: auto;
+            color: white;
+        }
+        .btn-start{
+            width: 130px;
+            color: white;
+            background-color:red;
+            padding: 15px;
+            cursor: grab;
+            border: 1px solid gray;
+            display: inline-block;
+            text-align: left;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            margin: -7px;
+           
+            cursor: auto;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        .row-1{
+            display: flex;
+            font-size: 14px;
+        }
+        .row-3{
+            font-size: 13px;
+            margin-top: 15px;
+        }
+        .lang{
+            border: 2px solid red;
+            width: 90px;
+            cursor: pointer;
+        }
+        .row-2{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-top: 20px;
+
+        }
+        .col span{
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: arial;
+        }
+        .netflix{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+       
+        
+
+    </style>
+</head>
+<body background="../public/images/netflix1.jpg">
+    <header>
+        <div>
+             <span class="brand-title"> NETFLIX</span>
+        </div>
+        <div>
+        <span class="language">
+            <span class="bi bi-translate"></span>         
+            <span>English</span>
+            <span class="bi bi-chevron-down"> </span>
+        </span>
+        <span class="btn-signin">
+            <span>SignIn</span>
+        </span>
+        </div>
+    </header>
+    <section>
+        <main>
+            <div class="main-title">Unlimited movies, TV shows and more</div>
+            <div class="main-subtitle">Watch anywhere. Cancel anytime</div>
+            <div class="form">
+                <div class="form-title">Ready to watch? Enter u email to create or restart ur membership</div>
+                <div>
+                    <span class="email">Email Address</span>
+                    
+                    <span class="btn-start">
+                        <span>Get Started</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </span>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <div class="row-1">
+            <address>
+                <span>Questions? call 000-000-0000/0000</span>
+            </address>
+        </div>
+        <div class="row-2">
+            <div class="col">
+                <span>FAQ</span>
+                <span>Investor Relations</span>
+                <span>Privacy</span>
+                <span>Speed Test</span>
+            </div>
+            <div class="col">
+                <span>Help Center </span>
+                <span>Jobs </span>
+                <span>Cookie Perferences</span>
+                <span>Legal Notices</span>
+            </div>
+            <div class="col">
+                <span>Account</span>
+                <span>ways To Watch</span>
+                <span>Corporate Information</span>
+                <span>Only on Netflix</span>
+            </div>
+            <div class="col">
+                <span>Media Center</span>
+                <span>Terms of Use</span>
+                <span>Contact Us</span>
+            </div>
+        </div>
+
+         <div class="row-3">
+                    <div class="lang">
+                        
+                        <span class="bi bi-translate"></span>         
+                        <span>English</span>
+                        <span class="bi bi-chevron-down"></span>
+                    </div>
+                    
+                    <div class="netflix">Netflix India</div>
+
+        </div>
+        
+    </footer>
+     
+    
+    
+</body>
+</html>

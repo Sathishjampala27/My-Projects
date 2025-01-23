@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function LoadPage(){
+            window.document.images[0].src="../public/images/kid.jpg";
+            window.document.forms[0].elements[2].value="Register";
+            window.document.forms[1].elements[2].value="Login";
+        }
+    </script>
+</head>
+<body onload="LoadPage()">
+    <div>
+    <img width="200" height="200" border="2">
+     </div>
+    <div>
+        <form>
+            <h2>Register</h2>
+            <input type="text" placeholder="your Mobile"><input type="Email" placeholder="mailid"> <input type="button">
+        </form>
+            
+    </div>
+    
+    <div>
+        <form>
+        <h2>Login</h2>
+        <input type="text" placeholder="Userid">
+        <input type="password" placeholder="password">
+        <input type="button">
+    </form>
+    </div>
+</body>
+</html>

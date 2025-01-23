@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <script>
+        function DeleteClick(){
+           result= confirm("Are you sure deleted this Data?");
+            if(result==true){
+                
+                document.querySelector("p").innerHTML= "<b>Delete successfully..</b> <br><a href='Output.html'>Back</a><br>";
+            }
+            else{
+                
+                document.querySelector("p").innerHTML="<b>Failed to delete successfully</b> <br><a href='Output.html'>Back</a><br>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+    <p></p>
+</body>
+</html>
